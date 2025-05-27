@@ -22,6 +22,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 .logo{
     display: flex;
@@ -165,7 +166,6 @@ body {
 }
 .banner{
     width: 100%;
-    position: relative;
 }
 .background_left{
     position: relative;
@@ -182,5 +182,34 @@ body {
     right: 0;
     width: 130vh;                 /*1333px;*/
     height: auto;
-    
+}
+
+.slogan {
+    position: absolute;
+    width: 818px;
+    top: 0;
+    padding-top: 144px;
+    padding-left: 74px;
+    color: #FFF;
+    font-family: TradeGothicW02-BoldCn20;
+    font-size: 135px;
+}
+.background_left p{
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    width: 652px;
+    padding-top: 720px;
+    padding-left: 74px;
+    font-family: Roboto;
+    font-size: 21px;
+}
+.background_left button{
+    position: absolute;
+    top: 0;
+    margin-top: 862px;
+    margin-left: 74px;
+    padding: 16px 78px;
+    font-size: 26px;
+    background-color: #58C4F2;
 }
