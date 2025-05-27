@@ -13,18 +13,27 @@ body {
     flex-direction: column;
 }
 .header {
-    width: 1920px;
+    width: 100%;
     height: 112px;
     flex-shrink: 0;
-    background: rgba(14, 28, 28, 0.75);
+    background-color: rgba(14, 28, 28, 0.75);
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 .logo{
     display: flex;
+    position: relative;
     align-items: flex-end;
     gap: 5.604px;
     flex-shrink: 0;
+}
+.logo a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .header > .logo {
     margin-block: auto;
@@ -63,7 +72,7 @@ body {
 }
 
 .footer{
-    width: 1920px;
+    width: 100%;
     height: 886px;
     flex-shrink: 0;
     background-color: #0E1C1C;
@@ -122,10 +131,10 @@ body {
 .footer_block li{
     position: relative;
 }
-.footer_block a {
+.footer_block nav a {
     color: gray;
 }
-.footer_block a::after{
+.footer_block nav a::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -147,4 +156,31 @@ body {
 .footer_block > .menu, .copyright {
     display: flex;
     justify-content: center;
+}
+
+.dummy{
+    height: 300px;
+    width: 1920px;
+    background-color: white;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.background_left{
+    position: relative;
+}
+
+.background_right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.banner_pic > img{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 130vh;                 /*1333px;*/
+    height: auto;
+    
 }
