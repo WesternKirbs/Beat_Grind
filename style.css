@@ -7,6 +7,18 @@ a{
     text-decoration: none;
     color: white;
 }
+h3{
+    font-family: TradeGothicW02-BoldCn20;
+    font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
+    /* font-size: 50px; */
+}
+.summary{
+    font-family: Roboto;
+    /* font-size: 24px; */
+    font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
+    line-height: 250%;
+    letter-spacing: 0.1rem;
+}
 body {
     display: flex;
     justify-content: space-between;
@@ -212,14 +224,56 @@ body {
     font-family: Roboto;
     font-size: calc(0.1rem + 1.09375vw); /*21px*/
 }
-.background_left button{
+.background_left .btn{
     position: absolute;
     bottom: 7%;
     left: 4.0%;
-    padding: 1.5549076774vh 4.0625vw;   /*17px 78px*/
+    /* padding: 1.5549076774vh 4.0625vw;   17px 78px */
+    /* border-radius: 10%; */
+    /* background: transparent; */
+    
+}
+.btn > a{
+    padding: 1.5549076774vh 4.0625vw;
     font-size: calc(0.3rem + 1.09375vw);  /*26px*/
     background-color: #58C4F2;
 }
+.index_about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_about > .wrapper{
+    /* width: 1375px; */
+    width: 71.6146vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.index_about > .wrapper > .txt{
+    /* width: 500px; */
+    width: 30.0417vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: clamp(1.875rem, 0.995rem + 2.817vi, 4.375rem);
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+.index_about > .wrapper > .img{
+    /* width: 654px; h:950 */
+    width: 34.0625vw;
+    height: 93.1372549020vh;
+    background-image: url(img/index_about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid black;
+}
+
+
 @media screen and (max-width: 768px) {
     .header > .menu{
         display: none;
