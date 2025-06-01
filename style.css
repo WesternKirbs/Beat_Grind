@@ -13,6 +13,23 @@ a{
     text-decoration: none;
     color: white;
 }
+.s_banner {
+    width: 100%;
+    height: 62.4314vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: white;
+    font-family: TradeGothicW02-BoldCn20;
+    font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
+    /* text-align: center; */
+    
+}
 h3{
     font-family: TradeGothicW02-BoldCn20;
     font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
@@ -403,3 +420,68 @@ body {
         display: none;
     }
 }
+
+/* ----------------------- about us */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about > .s_banner {
+    background-image: url(img/about_banner.png);
+}
+.about_description > .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.about_description > .wrapper > .txt{
+    width: 30.8333vw;
+    align-self: center;
+}
+.about_description > .wrapper > .img{
+    width: 34.8438vw;
+    height: 56.3725490196vh;
+    background-image: url(img/about_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.about > .team{
+    width: 60.7083vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+.about > .coach_cards{
+    width: 62.5vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.about > .coach_cards > .coach{
+    margin-top: 70px;
+    width: 30%;
+    height: 51.4971vh;
+    background-color: gray;
+    border-radius: 10%;
+    position: relative;
+    display: flex;
+    
+}
+.coach_cards > .coach img{
+    height: 61.4971vh;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.coach_cards > .coach h3{
+    margin-top: auto;
+    z-index: 1;
+    color: white;
+}
+
