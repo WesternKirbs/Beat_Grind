@@ -60,7 +60,7 @@ body {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 .logo{
@@ -485,3 +485,225 @@ body {
     color: white;
 }
 
+/* ----------------------- pricing */
+.pricing > .s_banner {
+    background-image: url(img/event3.png);
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.price_tags{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.price_tag {
+    position: relative;
+    width: 25.1041666667vw;
+    height: 83.4313725490vh;
+    background-color: #0E1C1C;
+    clip-path: polygon(100% 0, 100% 93%, 85% 100%, 0 100%, 0 0);
+}
+.tag_border {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(25.1041666667vw - 6px);
+    height: calc(83.4313725490vh - 6px);
+    clip-path: inherit;
+    background-color: white;
+}
+.tag_border > .tag_content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag_border > .tag_content > .price_level{
+    margin-top: 130px;
+}
+.tag_border > .tag_content h4{
+    font-size: clamp(0.625rem, 0.185rem + 1.408vw, 1.875rem);
+}
+.tag_border > .tag_content h3{
+    font-size: clamp(1.25rem, 0.59rem + 2.113vw, 3.125rem);
+}
+.tag_border > .tag_content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.tag_border > .tag_content ul li{
+    display: flex;
+    gap: 15px;
+}
+.price_tag > .tag_icon{
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 5.8333vw;
+}
+.price_tag > .tag_icon svg:last-of-type {
+    position: absolute;
+    left: 10px;
+    bottom: 18px
+}
+
+.tag_btn {
+    position: absolute;
+    width: 16.5104166667vw;
+    height: 8.8235294118vh;
+    background-color: #0E1C1C;
+    clip-path: polygon(100% 0, 100% 70%, 90% 100%, 0 100%, 0 0);
+    bottom: 25px;
+    left: 50px;
+}
+.tag_btn a {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: calc(16.5104166667vw - 6px);
+    height: calc(8.8235294118vh - 6px);
+    clip-path: inherit;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price_courses {
+    background-color:#0E1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.price_courses h2{
+    padding-top: 50px;
+}
+.price_courses h4{
+    color: white
+}
+.pcourse_cards{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 70px;
+}
+.pcourse_cards > *{
+    width: 19.2969vw;
+    height: 55.4412vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.pcourse_cards div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pcourse_cards div h2{
+    font-size: clamp(1.25rem, 0.48rem + 2.065vw, 3.438rem);
+
+}
+.pcourse_cards .punch{
+    background-image: url(img/punch.jpg);
+}
+.pcourse_cards .kick{
+    background-image: url(img/kick.png);
+}
+.pcourse_cards .lift{
+    background-image: url(img/lift.jpg);
+}
+.pcourse_cards .yoga{
+    background-image: url(img/yoga.png);
+}
+.price_team{
+    display: flex;
+    margin-left: 70px;
+}
+.price_team > .txt{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 23.9479vw;
+}
+.pteam_cards{
+    /* width: 62.5vw; */
+    width: 69.375vw;
+    height: 55.7265vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pteam_cards > .coach{
+    margin-top: 70px;
+    width: 22%;
+    height: 38.6078431373vh;
+    background-color: gray;
+    border-radius: 10%;
+    position: relative;
+    display: flex;
+}
+.pteam_cards div:nth-of-type(odd){
+    align-self: flex-end;
+}
+.pteam_cards > .coach img{
+    height: 46.6078431373vh;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+}
+.pteam_cards > .coach h3{
+    margin-top: auto;
+    z-index: 1;
+    color: white;
+}
+.price_review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.review_cards{
+    display: flex;
+    width: 81.1458vw;
+    gap: 30px;
+}
+.review_cards .rc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31%;
+    text-align: center;
+    gap: 30px;
+    border: 3px solid black;
+    border-radius: 5%;
+    padding-block: 50px;
+}
+.rc .rc_img{
+    width: 5.5729vw;
+    height: 10.3922vh;
+    border-radius: 100%;
+    border: 1px solid red;   
+}
+.rc p {
+    margin-inline: 30px;
+}
+.rating{
+    display: flex;
+
+}
+.rating .star{
+    width: 1.6651vw;
+    aspect-ratio: 1;
+    background-color: blue;
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
+}
