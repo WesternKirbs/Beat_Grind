@@ -428,7 +428,8 @@ body {
     gap: 50px;
 }
 .about > .s_banner {
-    background-image: url(img/about_banner.png);
+    background-image: url(img/about_banner.jpg);
+    background-position: 0 -30px
 }
 .about_description > .wrapper {
     display: flex;
@@ -706,4 +707,105 @@ body {
     aspect-ratio: 1;
     background-color: blue;
     clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
+}
+
+/* ----------------------- events */
+.events{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.events > .s_banner {
+    background-image: url(img/events.png);
+}
+.events > .txt {
+    width: 45.7083vw;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    gap: 30px;
+}
+.event_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_area{
+    width: 100%;
+    height: 40.3070588235vh;
+    position: relative;
+}
+.event_card {
+    width: 78.6458vw;
+    height: 32.3070588235vh;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+}
+.event_cards .card_area:nth-child(1) .event_card{
+    background-image: url(img/events1.jpg);
+    background-position: 0 -275px;
+}
+.event_cards .card_area:nth-child(2) .event_card{
+    background-image: url(img/event2.png);
+    background-position: 100px -95px;
+}
+.event_cards .card_area:nth-child(3) .event_card{
+    background-image: url(img/events3.png);
+    background-position: 200px -155px;
+}
+.event_card .txt_sect{
+    width: 29.8544791667vw;
+    height: 32.3070588235vh;
+    clip-path: polygon(83% 0, 100% 25%, 75% 100%, 0 100%, 24% 0);
+    background-color: black;
+}
+
+.event_card .txt_sect > .txt_border{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(29.8544791667vw - 4px);
+    height: calc(32.3070588235vh - 4px);
+    clip-path: inherit;
+    background-color: white;
+    color: black;
+}
+.txt_border .txt{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    gap: 10px
+}
+.txt_border .txt div p{
+    font-family: TradeGothicW02-BoldCn20;
+}
+.txt_border .txt h4{
+    font-size: clamp(0.625rem, 0.075rem + 1.761vw, 2.188rem);
+    font-family: TradeGothicW02-BoldCn20;
+    margin-bottom: 20px;
+}
+.txt_border .txt div{
+    display: flex;
+    gap: 10px;
+}
+.card_shadow{
+    width: calc(78.6458vw + 4px);
+    height: calc(32.3070588235vh + 4px);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    position: absolute;
+    background-color: gray;
+    opacity: 50%;
+    right: 115px;
+    top: 5px;
+    
+
 }
