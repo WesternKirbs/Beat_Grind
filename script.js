@@ -5,9 +5,9 @@ li.forEach((child) => {
         let c_title = e.target;
         let underline = c_title.parentElement;
         let arrow = underline.children[1].children[0].children[0];
-        c_title.style.color="cyan";
-        underline.style["border-bottom-color"]="cyan";
-        arrow.style["border-color"] = "cyan";
+        c_title.style.color="#007EE8";
+        underline.style["border-bottom-color"]="#007EE8";
+        arrow.style["border-color"] = "#007EE8";
 
         c_title.style.transition = "0.3s ease";
         underline.style.transition = "0.3s ease";
@@ -36,9 +36,9 @@ li.forEach((child) => {
 
     child.children[1].children[0].addEventListener("mouseover", (e)=>{
         let a = e.target.parentElement.parentElement.children[0];
-        a.style.color="cyan";
-        a.parentElement.style["border-bottom-color"]="cyan";
-        e.target.style["border-color"]="cyan"
+        a.style.color="#007EE8";
+        a.parentElement.style["border-bottom-color"]="#007EE8";
+        e.target.style["border-color"]="#007EE8"
     });
 
     child.children[1].children[0].addEventListener("mouseout", (e)=>{

@@ -35,12 +35,16 @@ h3{
     font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
     /* font-size: 50px; */
 }
+p, h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
 p.description{
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: calc(0.1rem + 1.09375vw); /*21px*/
 }
 p.summary{
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     /* font-size: 24px; */
     font-size: clamp(1rem, 0.875rem + 0.4vi, 1.125rem);
     line-height: 250%;
@@ -111,6 +115,7 @@ body {
 .header > .menu > ul li a:hover{
     background-color: white;
     color: #007EE8;
+    transition: 0.3s ease;
 }
 
 .footer{
@@ -163,7 +168,7 @@ body {
 .footer_block p {
     color: white;
     font-size: calc(0.8rem + 0.520833vw); /*26px*/
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
 }
 .footer_info_block > .icons {
     display: flex;
@@ -407,10 +412,11 @@ body {
     justify-content: space-between;
 }
 .txt > ul li a{
-        /* font-size: 45px; */
-        font-size: clamp(1.25rem, 0.7rem + 1.761vi, 2.813rem);
-        color: black;
-        width: 100%;
+    /* font-size: 45px; */
+    font-size: clamp(1.25rem, 0.7rem + 1.761vi, 2.813rem);
+    font-family: TradeGothicW02-BoldCn20;
+    color: black;
+    width: 100%;
 }
 .index_events > .wrapper{
     /* width: 1200px; */
@@ -443,7 +449,7 @@ body {
     gap: 5px;
 }
 .card h4{
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     /* font-size: 32px; */
     font-size: 24px;
 }
@@ -487,6 +493,7 @@ body {
     flex-direction: column;
     margin: auto;
     text-align: center;
+    gap: 20px;
 }
 .about > .coach_cards{
     width: 62.5vw;
