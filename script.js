@@ -19,12 +19,10 @@ li.forEach((child) => {
         pngs.forEach((png) => {
             if(png.id != course_type){
                 png.style.display = "none";
-                png.style.transition = "0.3s ease";
             }
                 
         });
         img.style.display = "block";
-        img.style.transition = "0.3s ease";
     });
 
     child.children[0].addEventListener("mouseout", (e)=>{

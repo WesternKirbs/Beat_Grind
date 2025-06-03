@@ -220,9 +220,18 @@ body {
 .banner_pic > img{
     position: absolute;
     bottom: 4px;
+    animation: banner_go 0.8s;
     right: 0;
     width: 69.4270833333vw;                 /*1333px;*/
     height: auto;
+}
+@keyframes banner_go{
+    0% {
+        right: -150px;
+    }
+    100%{
+        right: 0;
+    }
 }
 
 .slogan {
@@ -339,7 +348,7 @@ body {
 }
 #Lo-Fi{
     display: none;
-    width: 47.1875vw; 
+    width: 50.1875vw; 
 }
 @keyframes go {
     0% {
