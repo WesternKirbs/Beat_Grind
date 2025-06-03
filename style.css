@@ -310,20 +310,44 @@ body {
     width: 54.6875vw;
     /* height: 83.3333333333vh;  */
 }
-.index_courses > .wrapper > .img > svg, .pop{
+.index_courses > .wrapper > .img > svg{
+    display: block;
     max-width: 1050px;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 0;
     width: 54.6875vw;
     /* height: 44.2708vw; */
+    
 }
-.hardcore{
-    display: none;
+.pngs *{
     position: absolute;
-    /* width: 745px; */
-    width: 38.8020833333vw; 
     bottom: 0;
+    animation: go 1s;
+}
+#Pop {
+    width: 54.6875vw;
+}
+
+#Hardcore{
+    display: none;
+    width: 38.8020833333vw; 
+}
+#Dubstep{
+    display: none;
+    width: 50.1875vw; 
+}
+#Lo-Fi{
+    display: none;
+    width: 47.1875vw; 
+}
+@keyframes go {
+    0% {
+        left: -150px;
+    }
+    100%{
+        left: 0;
+    }
 }
 
 

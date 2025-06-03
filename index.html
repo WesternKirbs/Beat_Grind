@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beat Grind</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -136,13 +137,15 @@
                     </defs>
                 </svg>
                 <div class="pngs">
-                    <img src="img/pop_punch.png" alt="" class="pop">
-                    <img src="img/hardcore_highkick.png" alt="" class="hardcore">
+                    <img src="img/pop_punch.png" alt="" id="Pop">
+                    <img src="img/hardcore_highkick.png" alt="" id="Hardcore">
+                    <img src="img/dubstep_deadlift.png" alt="" id="Dubstep">
+                    <img src="img/lofi_lotus.png" alt="" id="Lo-Fi">
                 </div>
             </div>
             <div class="txt">
                 <h3 class="sub_title">Our Courses</h3>
-                <ul>
+                <ul id="course_list">
                     <li>
                         <a href="#">Pop Punch</a>
                         <div class="arrow_box">
@@ -158,7 +161,7 @@
                     
                     </li>
                     <li>
-                        <a href="#">Deadlift Dubstep</a>
+                        <a href="#">Dubstep Deadlift</a>
                         <div class="arrow_box">
                             <a href="#"><div class="arrow"></div></a>
                         </div>
