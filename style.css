@@ -25,13 +25,13 @@ a{
 }
 h2{
     color: white;
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
     font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
     /* text-align: center; */
     
 }
 h3{
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
     font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
     /* font-size: 50px; */
 }
@@ -97,7 +97,7 @@ body {
     /* gap: 72px; */
     flex-shrink: 0;
     color: #FFF;
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
     font-size: calc(0.7rem + 0.520833vw); /*26px*/
     font-style: normal;
     font-weight: 400;
@@ -248,7 +248,7 @@ body {
     left: 4%;
     top: 13%;
     color: #FFF;
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
     font-size: clamp(1rem, 0.8rem + 6.1979166667vw, 135px);  /*135px;*/
 }
 .background_left p{
@@ -826,11 +826,11 @@ body {
     gap: 10px
 }
 .txt_border .txt div p{
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
 }
 .txt_border .txt h4{
     font-size: clamp(0.625rem, 0.075rem + 1.761vw, 2.188rem);
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
     margin-bottom: 20px;
 }
 .txt_border .txt div{
