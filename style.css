@@ -527,7 +527,8 @@ body {
 
 /* ----------------------- pricing */
 .pricing > .s_banner {
-    background-image: url(img/event3.png);
+    background-image: url(img/events2.jpg);
+    background-position: 0 -5px
 }
 .pricing{
     display: flex;
@@ -944,8 +945,10 @@ text-decoration: underline;
     color: white;
 }
 .course_pop .m_banner {
-    background-image: url(img/dubstep_banner.jpg);
-    background-position: 0 -60px;
+    background-image: url(img/pop_banner.png);
+    /* background-position: 0 -60px; */
+    background-position: 0 -40px;
+
 
 }
 .course_pop .m_banner .banner_txt{
@@ -1071,4 +1074,74 @@ text-decoration: underline;
     color: black;
     align-self: flex-start;
     margin-left: 230px;
+}
+
+/* ----------------------- courses */
+.courses > .s_banner {
+    background-image: url(img/courses2.jpg);
+    background-position: 0 -5px
+}
+
+.courses > .txt{
+    width: 45vw;
+    /* display: flex; */
+    text-align: center;
+    margin: auto;
+    margin-block: 50px;
+}
+
+.courses  .course_cards{
+    margin-top: 30px;
+    width: calc(100% - 30px - 30px);
+    margin-inline: 30px;
+    /* height: 400px; */
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.courses .course_cards .course_card{
+    width: 48%;
+    height: 200px;
+    background-color: lightgray;
+    /* border-radius: 30px; */
+    position: relative;
+    margin-bottom: 70px;
+}
+.course_card img{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+}
+.course_cards .course_card:nth-of-type(3) img{
+    width: 47%;
+    left: -10px;
+}
+.course_cards .course_card:nth-of-type(2) img{
+    width: 35%;
+    left: -10px;
+}
+.course_card .course_title{
+    right: 10%;
+    bottom: 27%;
+    position: absolute;
+    text-align: center;
+}
+.course_card .course_title h3{
+    font-size: 3rem;
+    
+}
+.course_card .course_title h4{
+    font-size: 2rem;
+    font-family: "TradeGothicW02-BoldCn20";
+    letter-spacing: 1rem;
+    margin-right: -1rem;
+}
+.course_cards .course_card:nth-of-type(3) .course_title{
+    right: 5%;
+}
+.course_cards .course_card:nth-of-type(4) .course_title{
+    right: 20%;
 }
