@@ -19,8 +19,7 @@ li.forEach((child) => {
         pngs.forEach((png) => {
             if(png.id != course_type){
                 png.style.display = "none";
-            }
-                
+            }  
         });
         img.style.display = "block";
     });
