@@ -136,11 +136,13 @@ body {
     padding-inline: 1.875vw;
     /*36px;*/
 }
-
+.header>.menu>ul li a{
+    transition: 0.3s ease;
+}
 .header>.menu>ul li a:hover {
     background-color: white;
     color: #007EE8;
-    transition: 0.3s ease;
+    
 }
 
 .footer {
@@ -324,6 +326,8 @@ body {
     font-size: calc(0.3rem + 1.09375vw);
     /*26px*/
     background-color: #58C4F2;
+    font-family: "TradeGothicW02-BoldCn20";
+
 }
 
 .index_about {
@@ -645,6 +649,7 @@ article h3 {
 }
 
 article p.summary {
+    width: 85%;
     line-height: 130%;
     font-size: clamp(0.5rem, 0.34rem + 0.511vw, 0.8rem);
     margin-top: 10px;
@@ -674,7 +679,9 @@ article p.summary {
 .none {
     display: none;
 }
-
+.coach_cards .coach{
+    transition: .3s ease-in-out;
+}
 .coach_cards .coach img {
     /* height: 61.4971vh; */
     width: 90%;
@@ -721,8 +728,6 @@ article p.summary {
 .coach_cards .coach:hover {
     /* filter: grayscale(0%); */
     background-color: #007EE8;
-    transition: .3s ease-in-out;
-
 }
 
 .coach_cards .coach h3 {
@@ -755,6 +760,8 @@ article p.summary {
     height: 83.4313725490vh;
     background-color: #0E1C1C;
     clip-path: polygon(100% 0, 100% 93%, 85% 100%, 0 100%, 0 0);
+    transition: 0.3s ease;
+
 }
 
 .tag_border {
@@ -767,6 +774,7 @@ article p.summary {
     height: calc(83.4313725490vh - 6px);
     clip-path: inherit;
     background-color: white;
+    transition: 0.3s ease;
 }
 
 .tag_border>.tag_content {
@@ -798,21 +806,29 @@ article p.summary {
     display: flex;
     gap: 15px;
 }
-
-.price_tag>.tag_icon {
+.tag_content ul li p{
+    font-family: 'Roboto';
+}
+.price_tag .tag_icon {
     top: 20px;
     left: 20px;
     position: absolute;
     width: 5.8333vw;
 }
 
-.price_tag>.tag_icon svg:last-of-type {
+.price_tag .tag_icon svg:last-of-type {
     position: absolute;
     left: 10px;
-    bottom: 18px
+    bottom: 18px;
+    /* background-color: transparent; */
 }
-
+.price_tag:nth-of-type(1) .tag_icon svg:last-of-type {
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+}
 .tag_btn {
+    display: none;
     position: absolute;
     width: 16.5104166667vw;
     height: 8.8235294118vh;
@@ -820,9 +836,11 @@ article p.summary {
     clip-path: polygon(100% 0, 100% 70%, 90% 100%, 0 100%, 0 0);
     bottom: 25px;
     left: 50px;
+
 }
 
 .tag_btn a {
+    font-family: "TradeGothicW02-BoldCn20";
     position: absolute;
     top: 3px;
     left: 3px;
@@ -834,6 +852,27 @@ article p.summary {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.price_tag:hover{
+    height: 95.4313725490vh;
+}
+
+.price_tag:hover .tag_border{
+    height: calc(95.4313725490vh - 6px);
+    background-color: #00A3D6;
+    color: white;
+}
+.price_tag:hover .tick path{
+    fill: white;
+}
+.price_tag:hover .tag_icon svg:first-child path{
+    fill: blue;
+}
+.price_tag:hover .tag_icon svg:last-child path{
+    stroke: white;
+}
+.price_tag:last-child:hover .tag_icon svg:last-child path{
+    fill: white;
 }
 
 .price_courses {
@@ -921,7 +960,7 @@ article p.summary {
     margin-top: 70px;
     width: 22%;
     height: 38.6078431373vh;
-    background-color: gray;
+    background-color: lightgray;
     border-radius: 10%;
     position: relative;
     display: flex;
@@ -936,7 +975,10 @@ article p.summary {
     width: fit-content;
     position: absolute;
     bottom: 0;
-    left: -10%;
+    left: -5%;
+}
+.pteam_cards .coach:last-child img {
+    left: 15%;
 }
 
 .pteam_cards>.coach h3 {
@@ -974,7 +1016,10 @@ article p.summary {
     width: 5.5729vw;
     height: 10.3922vh;
     border-radius: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .rc p {
@@ -991,6 +1036,9 @@ article p.summary {
     aspect-ratio: 1;
     background-color: blue;
     clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+}
+.rc:first-child .rating .star:last-child{
+    display: none;
 }
 
 /* ----------------------- events */
@@ -1416,6 +1464,7 @@ input:focus {
     position: absolute;
     bottom: 0;
     /* left: 0; */
+    transition: .3s ease-in-out;
 }
 
 .course_card a {
@@ -1461,4 +1510,15 @@ input:focus {
 
 .course_cards .course_card:nth-of-type(4) .course_title {
     right: 20%;
+}
+.coach_cards .coach:hover img {
+    /* filter: grayscale(0%); */
+    /* transform: scale(1.05); */
+
+}
+
+.course_card a:hover + img{
+    /* filter: grayscale(0%); */
+    /* background-color: #007EE8; */
+    transform: scale(1.05);
 }
