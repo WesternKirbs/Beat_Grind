@@ -17,13 +17,16 @@ a {
 
 .s_banner {
     width: 100%;
-    height: 62.4314vh;
+    /* height: 62.4314vh; */
+    height: 360px;
+    min-height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: top;
 }
 
 h2 {
@@ -148,7 +151,7 @@ body {
 .footer {
     width: 100%;
     /* height: 886px; */
-    height: 86.8627450980vh;
+    height: 73.8627450980vh;
     flex-shrink: 0;
     background-color: #0E1C1C;
     display: flex;
@@ -202,7 +205,7 @@ body {
 
 .footer_block p {
     color: white;
-    font-size: calc(0.8rem + 0.520833vw);
+    font-size: calc(0.6rem + 0.520833vw);
     /*26px*/
     font-family: "Roboto", sans-serif;
 }
@@ -212,7 +215,14 @@ body {
     gap: 30px;
     align-items: center;
 }
-
+.footer_info_block>.icons div {
+    position: relative;
+}
+.footer_info_block>.icons div a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 .footer_block>.menu>ul {
     /* gap: 72px; */
     gap: 3.75vw;
@@ -358,6 +368,7 @@ body {
 
 .index_about>.wrapper>.img {
     /* width: 654px; h:950 */
+    /* w 396.364px; h 563.339px */
     width: 34.0625vw;
     height: 93.1372549020vh;
     background-image: url(img/index_about.jpg);
@@ -365,6 +376,10 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     border: 1px solid black;
+}
+
+.index_about>.wrapper>.img img {
+    width: 100%;
 }
 
 .index_courses {
@@ -537,12 +552,6 @@ body {
     font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
-    .header>.menu {
-        display: none;
-    }
-}
-
 /* ----------------------- about us */
 .about {
     display: flex;
@@ -552,31 +561,33 @@ body {
 
 .about>.s_banner {
     background-image: url(img/about_banner.jpg);
-    background-position: 0 -30px
 }
-
-.about_description>.wrapper {
+.about_description{
+    max-width: 1200px;
+}
+.about_description .wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    margin: auto;
     gap: 50px;
+    
 }
 
-.about_description>.wrapper>.txt {
-    width: 30.8333vw;
+.about_description .wrapper .txt {
+    /* width: 30.8333vw; */
+    /* flex-basis: 40%; */
     align-self: center;
+    width: 40%;
+}
+.about_description .wrapper img {
+    width: 40%;
+    max-width: 100%;
 }
 
-.about_description>.wrapper>.img {
-    width: 34.8438vw;
-    height: 56.3725490196vh;
-    background-image: url(img/about_img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.about>.team {
-    width: 60.7083vw;
+.about .team {
+    width: 60%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -584,8 +595,9 @@ body {
     gap: 20px;
 }
 
-.about>.coach_cards {
-    width: 62.5vw;
+.about .coach_cards {
+    /* width: 62.5vw; */
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -594,13 +606,56 @@ body {
 }
 
 .about .coach_cards .coach {
-    margin-top: 70px;
-    width: 30%;
-    height: 51.4971vh;
-    background-color: lightgray;
+    width: 25%;
+    flex-wrap: wrap;
     border-radius: 10%;
     position: relative;
     display: flex;
+}
+.coach .coach_bg{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background-color: lightgray;
+    border-radius: 10%;
+    bottom: 0;
+    right: 5%;
+    z-index: -1;
+}
+.coach h3{
+    position: absolute;
+    bottom: -2%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+}
+.coach_cards .coach .coach_bg{
+    transition: .3s ease-in-out;
+}
+.coach_cards .coach img {
+    width: 90%;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.coach_cards .coach:hover img {
+    transform: scale(1.05);
+
+}
+
+.coach_cards .coach a {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+.coach_cards .coach:hover .coach_bg {
+    background-color: #007EE8;
+    transform: scale(1.05);
+
 }
 
 .coach_modal {
@@ -679,67 +734,11 @@ article p.summary {
 .none {
     display: none;
 }
-.coach_cards .coach{
-    transition: .3s ease-in-out;
-}
-.coach_cards .coach img {
-    /* height: 61.4971vh; */
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    left: -5%;
-    /* filter: grayscale(100%); */
-    transform: scale(1);
-    transition: .3s ease-in-out;
-}
 
-.coach_cards .coach:nth-of-type(1) img,
-.coach_cards .coach:nth-of-type(5) img {
-    /* height: 61.4971vh; */
-    width: 100%;
-}
-
-.coach_cards .coach:nth-of-type(3) img {
-    /* height: 61.4971vh; */
-    width: 110%;
-}
-
-.coach_cards .coach:nth-of-type(9) img {
-    width: 120%;
-}
-
-.coach_cards .coach:hover img {
-    /* filter: grayscale(0%); */
-    transform: scale(1.05);
-
-}
-
-.coach_cards .coach a {
-    width: 100%;
-    height: 100%;
-    padding-left: 5%;
-    left: -5%;
-    bottom: 0;
-    display: block;
-    position: absolute;
-    z-index: 2;
-}
-
-.coach_cards .coach:hover {
-    /* filter: grayscale(0%); */
-    background-color: #007EE8;
-}
-
-.coach_cards .coach h3 {
-    margin-top: auto;
-    z-index: 1;
-    color: white;
-}
 
 /* ----------------------- pricing */
 .pricing>.s_banner {
     background-image: url(img/events2.jpg);
-    background-position: 0 -5px
 }
 
 .pricing {
@@ -897,23 +896,17 @@ article p.summary {
     padding-bottom: 70px;
 }
 
+
 .pcourse_cards div{
     width: 19.2969vw;
     height: 55.4412vh;
     overflow: hidden;
-    /* /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* filter: grayscale(0); */
-    /* filter: grayscale(1) sepia(62%) hue-rotate(325deg); */
-    filter:grayscale(1) ;
-    /* filter: brightness(120%); */
+    filter:grayscale(0);
     background-size: cover; 
-    
 }
 .pcourse_cards div img{
     width: 100%;
@@ -921,18 +914,33 @@ article p.summary {
     transition: 0.3s ease;
     transform: scale(1.3);
 }
-.pcourse_cards .punch:hover{
-    filter: grayscale(1) sepia(23%) saturate(500%) hue-rotate(360deg) brightness(117%);
+.overlay{
+    /* background: red; */
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    z-index: 0;
+    transition: 0.3s ease;
+}
+/* .pcourse_cards .punch:hover{
+    filter: grayscale(1) sepia(23%) saturate(500%)  brightness(117%) hue-rotate(360deg);
 }
 .pcourse_cards .kick:hover{
-    filter:grayscale(1) sepia(20%) saturate(268%) hue-rotate(85deg) brightness(100%);
+    filter: grayscale(1) sepia(23%) saturate(500%)  brightness(90%) hue-rotate(85deg);
+
 }
 .pcourse_cards .lift:hover{
-    filter:grayscale(1)  sepia(29%) saturate(500%) hue-rotate(325deg) brightness(93%) 
+    filter: grayscale(1) sepia(54%) saturate(501%) hue-rotate(330deg) brightness(99%);
 }
 .pcourse_cards .yoga:hover{
-    filter:grayscale(1) sepia(27%) saturate(505%) hue-rotate(244deg) brightness(91%) contrast(90%);
-}
+    filter: grayscale(1) sepia(23%) saturate(500%)  brightness(90%) hue-rotate(244deg);
+} */
 .pcourse_cards div:hover img{
     transform: scale(1);
 }
@@ -941,20 +949,33 @@ article p.summary {
     width: 100%;
     height: 100%;
     z-index: 3;
-}
-
-.pcourse_cards div h2 {
-    position: absolute;
+    font-family: "TradeGothicW02-BoldCn20";
     font-size: clamp(1.25rem, 0.48rem + 2.065vw, 3.438rem);
     transform: scale(0.9);
-    bottom: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.3s ease;
 }
-.pcourse_cards div:hover h2{
-    bottom: 60%;
+
+.pcourse_cards div:hover a{
+    margin-bottom: 50px;
     transform: scale(1.0);
-    
 }
+
+.pcourse_cards .punch:hover .overlay{
+    background: #827C02;
+}
+.pcourse_cards .kick:hover .overlay{
+    background: #197817;
+}
+.pcourse_cards .lift:hover .overlay{
+    background: #8D122C;
+}
+.pcourse_cards .yoga:hover .overlay{
+    background: #89269E;
+}
+
 
 /* .pcourse_cards .punch {
     background-image: url(img/punch.jpg);
@@ -1466,7 +1487,6 @@ input:focus {
 /* ----------------------- courses */
 .courses>.s_banner {
     background-image: url(img/courses2.jpg);
-    background-position: 0 -5px
 }
 
 .courses>.txt {
@@ -1560,4 +1580,11 @@ input:focus {
     /* filter: grayscale(0%); */
     /* background-color: #007EE8; */
     transform: scale(1.05);
+}
+
+/* ------------ RWD */
+@media screen and (max-width: 768px) {
+    .header>.menu {
+        display: none;
+    }
 }

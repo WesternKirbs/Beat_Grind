@@ -1,0 +1,67 @@
+.row-cols-1 > .col { width: 100%;}
+.row-cols-2 > .col { width: 50%;}
+.row-cols-3 > .col { width: 33.333333%;}
+.row-cols-4 > .col { width: 25%;}
+.row-cols-5 > .col { width: 20%;}
+.row-cols-6 > .col { width: 16.666666%;}
+.row-cols-7 > .col { width: 14.2857142857%;}
+.row-cols-8 > .col { width: 12.5%;}
+.row-cols-9 > .col { width: 11.1111111%;}
+.row-cols-10 > .col { width: 10%;}
+.row-cols-11 > .col { width: 9.090909%;}
+.row-cols-12 > .col { width: 8.333333%;}
+
+@media screen and (max-width: 768px) {
+    .row-cols-md-1 > .col { width: 100%;}
+    .row-cols-md-2 > .col { width: 50%;}
+    .row-cols-md-3 > .col { width: 33.333333%;}
+    .row-cols-md-4 > .col { width: 25%;}
+    .row-cols-md-5 > .col { width: 20%;}
+    .row-cols-md-6 > .col { width: 16.666666%;}
+    .row-cols-md-7 > .col { width: 14.2857142857%;}
+    .row-cols-md-8 > .col { width: 12.5%;}
+    .row-cols-md-9 > .col { width: 11.1111111%;}
+    .row-cols-md-10 > .col { width: 10%;}
+    .row-cols-md-11 > .col { width: 9.090909%;}
+    .row-cols-md-12 > .col { width: 8.333333%;}
+
+    .header>.menu {
+        display: none;
+    }
+    .about_description .wrapper .txt {
+        width: 80%;
+    }
+    
+    .about_description .wrapper img {
+        width: 60%;
+    }
+    .about .team {
+        width: 80%;
+    }
+    .about .coach_cards .coach {
+        width: 60%;
+    }
+    .coach_modal .white_block {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .coach_modal img {
+        width: 35%;
+        padding: 2%;
+    }
+    article p.summary {
+        width: 95%;
+    }
+    .white_block article {
+        gap: 10px;
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -15px;
+}
+.col {
+    box-sizing: border-box;
+    padding-inline: 15px;
+}
