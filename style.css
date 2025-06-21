@@ -6,10 +6,13 @@
 }
 
 @font-face {
-    font-family: "TradeGothicW02-BoldCn20";
-    src:
-        url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff2"),
-        url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff");
+    font-family: "TradeGothicLTStd-BdCn20";
+    src: url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.eot");
+    src: url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.svg#TradeGothicLTStd-BdCn20")format("svg");
 }
 
 body {
@@ -39,14 +42,14 @@ a {
 
 h2 {
     color: white;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
     /* text-align: center; */
 
 }
 
 h3 {
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     font-size: clamp(3.125rem, 1.139rem + 4.259vw, 6.25rem);
     /* font-size: 50px; */
 }
@@ -123,7 +126,7 @@ body {
     /* gap: 72px; */
     flex-shrink: 0;
     color: #FFF;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     font-size: calc(0.7rem + 0.520833vw);
     /*26px*/
     font-style: normal;
@@ -325,7 +328,7 @@ footer {
     left: 4%;
     top: 13%;
     color: #FFF;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     font-size: clamp(1rem, 0.8rem + 6.1979166667vw, 135px);
     /*135px;*/
 }
@@ -354,7 +357,7 @@ footer {
     font-size: calc(0.3rem + 1.09375vw);
     /*26px*/
     background-color: #58C4F2;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
 
 }
 
@@ -524,7 +527,7 @@ footer {
 .txt>ul li a {
     /* font-size: 45px; */
     font-size: clamp(1.25rem, 0.7rem + 1.761vi, 2.813rem);
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     color: black;
     width: 100%;
 }
@@ -882,7 +885,7 @@ article p.summary {
 }
 
 .tag_btn a {
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     position: absolute;
     top: 3px;
     left: 3px;
@@ -996,7 +999,7 @@ article p.summary {
     padding-bottom: 100%;
     /* height: 100%; */
     z-index: 3;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     /* font-size: clamp(1.25rem, 0.48rem + 2.065vw, 3.438rem); */
     font-size: 2rem;
     /* transform: scale(0.9); */
@@ -1254,12 +1257,12 @@ div.slick-slide img {
 }
 
 .txt_border .txt div p {
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
 }
 
 .txt_border .txt h4 {
     font-size: clamp(0.625rem, 0.075rem + 1.761vw, 2.188rem);
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     margin-bottom: 20px;
 }
 
@@ -1439,13 +1442,13 @@ input:focus {
 
 .banner_cards .banner_card div {
     font-size: 30px;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     position: relative;
 }
 
 .banner_cards .banner_card p {
     font-size: 20px;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
 }
 
 .banner_cards .banner_card div .tick {
@@ -1525,7 +1528,7 @@ input:focus {
 }
 
 .benefit_card .bcard_txt div h5 {
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     font-size: clamp(0.625rem, 0.16rem + 1.489vw, 1.5rem);
 }
 
@@ -1623,7 +1626,7 @@ input:focus {
 
 .course_card .course_title h4 {
     font-size: 2rem;
-    font-family: "TradeGothicW02-BoldCn20";
+    font-family: "TradeGothicLTStd-BdCn20";
     letter-spacing: 1rem;
     margin-right: -1rem;
 }
