@@ -1,67 +1,146 @@
-.row-cols-1 > .col { width: 100%;}
-.row-cols-2 > .col { width: 50%;}
-.row-cols-3 > .col { width: 33.333333%;}
-.row-cols-4 > .col { width: 25%;}
-.row-cols-5 > .col { width: 20%;}
-.row-cols-6 > .col { width: 16.666666%;}
-.row-cols-7 > .col { width: 14.2857142857%;}
-.row-cols-8 > .col { width: 12.5%;}
-.row-cols-9 > .col { width: 11.1111111%;}
-.row-cols-10 > .col { width: 10%;}
-.row-cols-11 > .col { width: 9.090909%;}
-.row-cols-12 > .col { width: 8.333333%;}
-
 @media screen and (max-width: 768px) {
-    .row-cols-md-1 > .col { width: 100%;}
-    .row-cols-md-2 > .col { width: 50%;}
-    .row-cols-md-3 > .col { width: 33.333333%;}
-    .row-cols-md-4 > .col { width: 25%;}
-    .row-cols-md-5 > .col { width: 20%;}
-    .row-cols-md-6 > .col { width: 16.666666%;}
-    .row-cols-md-7 > .col { width: 14.2857142857%;}
-    .row-cols-md-8 > .col { width: 12.5%;}
-    .row-cols-md-9 > .col { width: 11.1111111%;}
-    .row-cols-md-10 > .col { width: 10%;}
-    .row-cols-md-11 > .col { width: 9.090909%;}
-    .row-cols-md-12 > .col { width: 8.333333%;}
 
-    .header>.menu {
-        display: none;
-    }
+    /* ----------------about */
     .about_description .wrapper .txt {
         width: 80%;
     }
-    
+
     .about_description .wrapper img {
         width: 60%;
     }
+
     .about .team {
         width: 80%;
     }
+
     .about .coach_cards .coach {
         width: 60%;
     }
+
     .coach_modal .white_block {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     .coach_modal img {
         width: 35%;
         padding: 2%;
     }
+
     article p.summary {
         width: 95%;
     }
+
     .white_block article {
         gap: 10px;
     }
+
+    /* ---------- pricing */
+    .pcourse_cards {
+        width: 70vw;
+    }
+
+    .pcourse_cards div a {
+        font-size: 1.75rem;
+        padding-top: 85%;
+        display: none; 
+        transition: 0.3s ease;
+    }
 }
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-inline: -15px;
+
+@media screen and (max-width: 620px) {
+    .pcourse_cards {
+        width: 90vw;
+    }
+
+    .pcourse_cards div a {
+        font-size: 1.75rem;
+    }
 }
-.col {
-    box-sizing: border-box;
-    padding-inline: 15px;
+
+@media screen and (min-width: 768px) {
+    .pcourse_cards {
+        /* width: 90vw; */
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: auto;
+    }
+
+
+    .pcourse_cards div {
+
+        width: 22%;
+        /* width: 19.2969vw; */
+        /* height: 55.4412vh; */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        filter: grayscale(0);
+        background-size: cover;
+    }
+
+    .pcourse_cards div img {
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease;
+        transform: scale(1.3);
+    }
+
+    .pcourse_cards div .overlay {
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        content: ' ';
+        z-index: 0;
+        transition: 0.3s ease;
+    }
+
+    .pcourse_cards div:hover img {
+        transform: scale(1);
+    }
+
+    .pcourse_cards div a {
+        position: absolute;
+        width: 100%;
+        /* padding-bottom: 100%; */
+        height: 100%;
+        z-index: 3;
+        font-family: "TradeGothicW02-BoldCn20";
+        font-size: 2rem;
+        transform: scale(0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease;
+        padding-top: 60%;
+
+    }
+
+    .pcourse_cards div:hover a {
+        margin-bottom: 50px;
+        transform: scale(1.0);
+    }
+
+    .pcourse_cards .punch:hover .overlay{
+        background: #827C02;
+    }
+    .pcourse_cards .kick:hover .overlay{
+        background: #197817;
+    }
+    .pcourse_cards .lift:hover .overlay{
+        background: #8D122C;
+    }
+    .pcourse_cards .yoga:hover .overlay{
+        background: #89269E;
+    }
+
 }
