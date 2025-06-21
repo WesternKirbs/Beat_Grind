@@ -7,12 +7,9 @@
 
 @font-face {
     font-family: "TradeGothicLTStd-BdCn20";
-    src: url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.eot");
-    src: url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/70b2e174904ada48dd1dbe8bfbf62c42.svg#TradeGothicLTStd-BdCn20")format("svg");
+    src:
+        url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff2"),
+        url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff");
 }
 
 body {
