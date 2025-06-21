@@ -314,22 +314,22 @@
             <h2>POP, HARDCORE, DUBSTEP AND MORE</h2>
             <h4>Exercise for every genre, every fitness level and every mood.</h4>
             <div class="pcourse_cards">
-                <div class="punch">
+                <div class="punch pcourse_card">
                     <img src="img/punch_1.png" alt="">
                     <a href="pop.html">Pop Punch</a>
                     <div class="overlay"></div>
                 </div>
-                <div class="kick">
+                <div class="kick pcourse_card">
                     <img src="img/kick.png" alt="">
                     <a href="hardcore.html">Hardcore Highkick</a>
                     <div class="overlay"></div>
                 </div>
-                <div class="lift">
+                <div class="lift pcourse_card">
                     <img src="img/lift.png" alt="">
                     <a href="dubstep.html">Dubstep Deadlift</a>
                     <div class="overlay"></div>
                 </div>
-                <div class="yoga">
+                <div class="yoga pcourse_card">
                     <img src="img/yoga.png" alt="">
                     <a href="lofi.html">Lo-fi Lotus</a>
                     <div class="overlay"></div>
@@ -343,30 +343,28 @@
                     motivate and inspire you with hottest trending music, delivering motivation and an inspiring
                     atmosphere to every unforgettable fitness vibe.</p>
             </div>
-            <!-- <div class="pteam_cards">
-                <div class="coach">
+            
+            <div class="pteam_cards">
+                <div class="coaches">
                     <img src="img/coach7.png" alt="">
-                    <h3>TYSON</h3>
                 </div>
-                <div class="coach">
-                    <img src="img/coach5.png" alt="">
-                    <h3>LAURA</h3>
+                <div class="coaches">
+                    <img src="img/coach10.png" alt="">
+                    
                 </div>
-                <div class="coach">
+                <div class="coaches">
                     <img src="img/coach2.png" alt="">
-                    <h3>DAVID</h3>
+                    
                 </div>
-                <div class="coach">
+                <div class="coaches">
                     <img src="img/coach4.png" alt="">
-                    <h3>EMILY</h3>
                 </div>
-            </div> -->
+            </div>
         </div>
         <div class="price_review">
             <h3>Join our community</h3>
             <div class="review_cards">
                 <div class="rc">
-                    <div class="rc_img" style="background-image: url(img/review1.png);"></div>
                     <p>"Beat Grind transformed my workouts! The Pop Punch class with Tyson's guidance is so
                         energizing—those pop beats keep me motivated. I've never felt stronger, and the community vibe
                         is amazing!"</p>
@@ -380,7 +378,6 @@
                     <p>Mia Thompson</p>
                 </div>
                 <div class="rc">
-                    <div class="rc_img" style="background-image: url(img/review2.png);"></div>
                     <p>"Amazing experience at Beat Grind! Laura's Lo-Fi Lotus sessions are a perfect blend of calm and
                         strength. Beat Grind's variety and supportive coaches make it my favorite fitness spot."</p>
                     <div class="rating">
@@ -393,7 +390,43 @@
                     <p>Ethan Rivera</p>
                 </div>
                 <div class="rc">
-                    <div class="rc_img" style="background-image: url(img/review3.png);"></div>
+                    <p>"I love the Hardcore Highkick class with Jill! The intensity paired with killer music makes every
+                        session epic. Beat Grind has boosted my fitness and confidence—highly recommend!"</p>
+                    <div class="rating">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <p>Liam Carter</p>
+                </div>
+                <div class="rc">
+                    <p>"Beat Grind transformed my workouts! The Pop Punch class with Tyson's guidance is so
+                        energizing—those pop beats keep me motivated. I've never felt stronger, and the community vibe
+                        is amazing!"</p>
+                    <div class="rating">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <p>Mia Thompson</p>
+                </div>
+                <div class="rc">
+                    <p>"Amazing experience at Beat Grind! Laura's Lo-Fi Lotus sessions are a perfect blend of calm and
+                        strength. Beat Grind's variety and supportive coaches make it my favorite fitness spot."</p>
+                    <div class="rating">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+                    <p>Ethan Rivera</p>
+                </div>
+                <div class="rc">
                     <p>"I love the Hardcore Highkick class with Jill! The intensity paired with killer music makes every
                         session epic. Beat Grind has boosted my fitness and confidence—highly recommend!"</p>
                     <div class="rating">
@@ -687,6 +720,45 @@
             $('.pcourse_cards').on('afterChange', function (e, s, d) {
                 show_a();
             });
+            $(".pteam_cards").slick(
+                {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 2,
+                    responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            // centerPadding: "10px",
+                            slidesToShow: 1,
+                            // variableWidth: true
+
+                        }
+                    }
+                ],
+                }
+            );
+            $(".review_cards").slick(
+                {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 3,
+                    centerMode: true,
+                    responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            // centerPadding: "10px",
+                            slidesToShow: 1,
+                            // variableWidth: true
+
+                        }
+                    }
+                ],
+                }
+            );
         });
     </script>
 </body>

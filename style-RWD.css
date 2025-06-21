@@ -41,20 +41,30 @@
     }
 
     .pcourse_cards div a {
-        font-size: 1.75rem;
+        /* font-size: 2rem; */
+        font-size: clamp(0.813rem, -0.413rem + 5.026vw, 2rem);
         padding-top: 85%;
-        display: none; 
+        display: none;
         transition: 0.3s ease;
+    }
+
+    .price_team .pteam_cards {
+        width: 90%;
+    }
+    .price_team {
+        flex-direction: column;
+    }
+    .price_team .txt{
+        align-self: center;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 10%;
     }
 }
 
 @media screen and (max-width: 620px) {
     .pcourse_cards {
         width: 90vw;
-    }
-
-    .pcourse_cards div a {
-        font-size: 1.75rem;
     }
 }
 
@@ -114,7 +124,7 @@
         /* padding-bottom: 100%; */
         height: 100%;
         z-index: 3;
-        font-family: "TradeGothicW02-BoldCn20";
+        font-family: "TradeGothicLTStd-BdCn20";
         font-size: 2rem;
         transform: scale(0.9);
         display: flex;
@@ -130,16 +140,19 @@
         transform: scale(1.0);
     }
 
-    .pcourse_cards .punch:hover .overlay{
+    .pcourse_cards .punch:hover .overlay {
         background: #827C02;
     }
-    .pcourse_cards .kick:hover .overlay{
+
+    .pcourse_cards .kick:hover .overlay {
         background: #197817;
     }
-    .pcourse_cards .lift:hover .overlay{
+
+    .pcourse_cards .lift:hover .overlay {
         background: #8D122C;
     }
-    .pcourse_cards .yoga:hover .overlay{
+
+    .pcourse_cards .yoga:hover .overlay {
         background: #89269E;
     }
 
