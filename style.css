@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: "TradeGothicLTStd-BdCn20";
+    font-family: "TradeGothicW02-BoldCn20";
     src:
         url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff2"),
         url("fonts/TradeGothicLTStd-BdCn20.woff") format("woff");
@@ -524,7 +524,7 @@ footer {
 .txt>ul li a {
     /* font-size: 45px; */
     font-size: clamp(1.25rem, 0.7rem + 1.761vi, 2.813rem);
-    font-family: TradeGothicW02-BoldCn20;
+    font-family: "TradeGothicW02-BoldCn20";
     color: black;
     width: 100%;
 }
