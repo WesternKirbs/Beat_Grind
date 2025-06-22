@@ -659,7 +659,8 @@
     <script src="vendors/jquery/jquery-3.7.1.min.js"></script>
     <script src="vendors/slick/slick.min.js"></script>
     <script>
-        let slick_on = false;
+        
+let slick_on = false;
         function slick_toggle() {
             if ($(window).width() < 768) {
                 if (!slick_on) {
@@ -668,6 +669,7 @@
                             arrows: false,
                             centerMode: true,
                             slidesToShow: 1,
+                            variableWidth: true,
                         });
                     slick_on = true;
                 }
@@ -724,12 +726,13 @@
                 {
                     dots: true,
                     arrows: false,
-                    slidesToShow: 2,
+                    variableWidth: true,
                     responsive: [
                     {
                         breakpoint: 768,
                         settings: {
                             arrows: false,
+                            // variableWidth: false,
                             // centerPadding: "10px",
                             slidesToShow: 1,
                             // variableWidth: true
