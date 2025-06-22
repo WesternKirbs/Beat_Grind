@@ -144,7 +144,8 @@ body {
     align-items: center;
     padding-block: 28px;
     /*40px;*/
-    padding-inline: 1.875vw;
+    padding-inline: 24px;
+    /* padding-inline: 1%; */
     /*36px;*/
 }
 
@@ -155,7 +156,10 @@ body {
 .header>.menu>ul li a:hover {
     background-color: white;
     color: #007EE8;
+}
 
+.burger {
+    display: none;
 }
 
 .footer,
@@ -1647,11 +1651,4 @@ input:focus {
     /* filter: grayscale(0%); */
     /* background-color: #007EE8; */
     transform: scale(1.05);
-}
-
-/* ------------ RWD */
-@media screen and (max-width: 768px) {
-    .header>.menu {
-        display: none;
-    }
 }

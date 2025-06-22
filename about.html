@@ -144,6 +144,15 @@
                 <li><a href="member.html">Member Login</a></li>
             </ul>
         </nav>
+        <div class="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 12 10" fill="none">
+                <path d="M0.5 1H11.5M0.5 5H11.5M0.5 9H11.5" stroke="white" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <a href="#"></a>
+        </div>
+
+    </div>
     </div>
     <div class="about">
         <div class="s_banner">
@@ -615,6 +624,18 @@
                 $('.x a').on('click', function (e) {
                     e.preventDefault();
                     $('.coach_modal').click();
+                });
+                let burger_on = false;
+                $('.burger a').on('click', function (e){
+                    e.preventDefault();
+                    if(burger_on){
+                        $('nav.menu').css('display', 'none');
+                        burger_on = false;
+                    } else{
+                        $('nav.menu').css('display', 'block');
+                        burger_on = true;
+                    }
+                    
                 });
 
 
