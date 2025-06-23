@@ -1435,14 +1435,46 @@ input:focus {
 }
 
 
-
+.m_banner {
+    background-position: top;
+}
 .course_pop .m_banner {
     background-image: url(img/pop_banner1.png);
-    background-position: top;
-
+}
+.course_hardcore .m_banner {
+    background-image: url(img/kick_banner2.jpg);
+}
+.course_dubstep .m_banner {
+    background-image: url(img/dubstep_banner.jpg);
+}
+.course_lofi .m_banner {
+    background-image: url(img/lotus_banner2.jpg);
+    background-position: bottom;
 }
 
-.course_pop .m_banner .banner_txt {
+.course_pop .m_banner .banner_txt .btn a,
+.course_pop + div + .bcard_bg{
+    background-color: #827C02;
+}
+
+.course_hardcore .m_banner .banner_txt .btn a,
+.course_hardcore + div + .bcard_bg{
+    background-color: #197817;
+}
+.course_dubstep .m_banner .banner_txt .btn a,
+.course_dubstep + div + .bcard_bg{
+    background-color: #8D122C;
+}
+.course_lofi .m_banner .banner_txt .btn a,
+.course_lofi + div + .bcard_bg{
+    background-color: #89269E;
+}
+.bcard_bg {
+    width: 100%;
+}
+
+
+.m_banner .banner_txt {
     /* position: absolute; */
     display: flex;
     flex-direction: column;
@@ -1460,12 +1492,10 @@ input:focus {
     color: white;
 }
 
-.course_pop .m_banner .banner_txt .btn {
+.m_banner .banner_txt .btn {
     margin-top: 30px;
 }
-
-.course_pop .m_banner .banner_txt .btn a {
-    background-color: #827C02;
+.m_banner .banner_txt .btn a{
     display: inline-block;
 }
 
@@ -1539,11 +1569,6 @@ input:focus {
 
 .whatis h3 {
     font-size: 4.0rem;
-}
-
-.bcard_bg {
-    background-color: #827C02;
-    width: 100%;
 }
 
 .benefit_card {
