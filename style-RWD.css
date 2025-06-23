@@ -8,7 +8,7 @@
         background-color: #2E2E2E;
         top: 100%;
     }
-    .menu ul{
+    .header .menu ul{
         flex-direction: column;
         align-items: start;
     }
@@ -109,6 +109,21 @@
     .coaches.slick-slide img{
         width: fit-content;
     }
+    
+    /* ----------footer */
+    .footer_info {
+        display: flex;
+        /* gap: 125px; */
+        /* gap: 6.5104166667vw; */
+        gap: 35px;
+    }
+    .footer_info_block .icons div svg{
+        width: 20px;
+    }
+    .footer_info_block .icons div:last-of-type svg{
+        width: 15px;
+    }
+
 
     /* ----------course inner  */
     .banner_cards {
@@ -166,6 +181,23 @@
     }
     .pcourse_card.slick-slide {
         width: 50vw;
+    }
+}
+@media screen and (max-width: 426px) {
+    .footer_info_block .icons div svg{
+        width: 15px;
+    }
+    .footer_info_block .icons div:last-of-type svg{
+        width: 10px;
+    }
+    .footer_info_block>.icons {
+        gap: 15px;
+    }
+    .footer_info {
+        gap: 10px;
+    }
+    .footer_info_block:nth-of-type(2) {
+        width: 35%;
     }
 }
 
