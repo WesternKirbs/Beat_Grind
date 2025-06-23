@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="logo">
             <a href="index.html"></a>
             <svg xmlns="http://www.w3.org/2000/svg" width="106" height="73" viewBox="0 0 106 73" fill="none">
@@ -141,7 +141,7 @@
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="member.html">Member Login</a></li>
+                <li><a href="member.html">Member</a></li>
             </ul>
         </nav>
         <div class="burger">
@@ -152,7 +152,7 @@
             <a href="#"></a>
         </div>
 
-    </div>
+    </header>
     </div>
     <div class="about">
         <div class="s_banner">
@@ -601,13 +601,14 @@
                         <li><a href="courses.html">Courses</a></li>
                         <li><a href="pricing.html">Pricing</a></li>
                         <li><a href="events.html">Events</a></li>
-                        <li><a href="member.html">Member Login</a></li>
+                        <li><a href="member.html">Member</a></li>
                     </ul>
                 </nav>
                 <p class="copyright"><a href="reference.html">Side Project Website For Web Development Demo Only</a></p>
             </div>
         </footer>
         <script src="vendors/jquery/jquery-3.7.1.min.js"></script>
+        <script src="burger.js"></script>
         <script>
             $(function () {
                 $(".coach a").on('click', function (e) {
@@ -624,18 +625,6 @@
                 $('.x a').on('click', function (e) {
                     e.preventDefault();
                     $('.coach_modal').click();
-                });
-                let burger_on = false;
-                $('.burger a').on('click', function (e){
-                    e.preventDefault();
-                    if(burger_on){
-                        $('nav.menu').css('display', 'none');
-                        burger_on = false;
-                    } else{
-                        $('nav.menu').css('display', 'block');
-                        burger_on = true;
-                    }
-                    
                 });
 
 

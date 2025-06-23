@@ -116,8 +116,6 @@ body {
     /*84px;*/
 }
 
-
-
 .menu ul {
     display: flex;
     /* width: 712px; */
@@ -300,22 +298,22 @@ footer {
 
 .background_left {
     position: relative;
+    background-image: url(img/index_hero2.jpg);
+    background-position: center;
+    width: 100%;
+    height: 653.7px;
+    display: flex;
+    align-items: center;
+    
 }
 
-.background_right {
+
+.background_left img {
     position: absolute;
     bottom: 0;
-    right: 0;
-}
-
-.banner_pic>img {
-    position: absolute;
-    bottom: 4px;
     animation: banner_go 0.8s;
     right: 0;
-    width: 69.4270833333vw;
-    /*1333px;*/
-    height: auto;
+    width: 70%;
 }
 
 @keyframes banner_go {
@@ -329,33 +327,36 @@ footer {
 }
 
 .slogan {
-    position: absolute;
-    width: 42.6041666667vw;
+    width: 40%;
+    /* width: 42.6041666667vw; */
     /*818px*/
-    top: 0;
     /* padding-top: 14.1176470588vh; 144px; */
     /* padding-left: 3.8541666667vw; 74px; */
-    left: 4%;
-    top: 13%;
     color: #FFF;
     font-family: "TradeGothicLTStd-BdCn20";
-    font-size: clamp(1rem, 0.8rem + 6.1979166667vw, 135px);
+    /* font-size: clamp(1rem, 0.8rem + 6.1979166667vw, 135px); */
+    font-size: 5.0rem;
     /*135px;*/
 }
-
-.background_left p {
-    position: absolute;
-    bottom: 20%;
-    left: 4%;
+.background_left .hero_context{
+    margin-left: 50px;
+    /* margin-top: 85px; */
+}
+.background_left .hero_context p {
     color: #FFF;
-    width: 33.9583333333vw;
+    width: 35%;
+    margin-top: 15px;
+    font-size: 1rem;
+    /* margin-bottom: 30px; */
+    /* width: 33.9583333333vw; */
     /*652px*/
+}
+.background_left .hero_context .btn {
+    margin-top: 60px;
 }
 
 .background_left .btn {
-    position: absolute;
-    bottom: 7%;
-    left: 4.0%;
+
     /* padding: 1.5549076774vh 4.0625vw;   17px 78px */
     /* border-radius: 10%; */
     /* background: transparent; */
@@ -374,53 +375,47 @@ footer {
 
 .index_about {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .index_about>.wrapper {
     /* width: 1375px; */
-    width: 71.6146vw;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 }
 
 .index_about>.wrapper>.txt {
     /* width: 500px; */
-    width: 30.0417vw;
+    width: 30%;
     display: flex;
+    align-self: center;
     flex-direction: column;
     /* justify-content: space-between; */
     gap: clamp(1.875rem, 0.995rem + 2.817vi, 4.375rem);
     align-items: flex-start;
     /* flex-wrap: wrap; */
 }
-
-.index_about>.wrapper>.img {
-    /* width: 654px; h:950 */
-    /* w 396.364px; h 563.339px */
-    width: 34.0625vw;
-    height: 93.1372549020vh;
-    background-image: url(img/index_about.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border: 1px solid black;
+.index_about .wrapper .txt img{
+    display: none;
 }
-
-.index_about>.wrapper>.img img {
-    width: 100%;
+.index_about .wrapper img{
+    width: 40%;
+    max-width: 100%;
 }
 
 .index_courses {
     margin-top: 20px;
+    width: 100%;
 }
 
 .index_courses>.wrapper {
     /* width: 1560px; */
-    width: 91.25vw;
+    /* width: 91.25vw; */
+    max-width: 1200px;
     display: flex;
     justify-content: start;
     gap: clamp(3.125rem, 2.025rem + 3.521vw, 6.25rem);
@@ -429,10 +424,7 @@ footer {
 
 .index_courses>.wrapper>.img {
     position: relative;
-    /* bottom: 0; */
-    /* width: 1050px; h850*/
-    width: 54.6875vw;
-    /* height: 83.3333333333vh;  */
+    width: 50%;
 }
 
 .index_courses>.wrapper>.img>svg {
@@ -441,7 +433,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 54.6875vw;
+    width: 90%;
     /* height: 44.2708vw; */
 
 }
@@ -453,22 +445,23 @@ footer {
 }
 
 #Pop {
-    width: 54.6875vw;
+    /* width: 54.6875vw; */
+    width: 100%;
 }
 
 #Hardcore {
     display: none;
-    width: 38.8020833333vw;
+    width: 75%;
 }
 
 #Dubstep {
     display: none;
-    width: 50.1875vw;
+    width: 100%;
 }
 
 #Lo-Fi {
     display: none;
-    width: 50.1875vw;
+    width: 100%;
 }
 
 @keyframes go {
@@ -485,7 +478,8 @@ footer {
 
 .index_courses>.wrapper>.txt {
     /* width: 507px; */
-    width: 26.40625vw;
+    /* width: 26.40625vw; */
+    width: 45%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -494,8 +488,7 @@ footer {
 }
 
 .index_courses>.wrapper>.txt .sub_title {
-    /* width: 507px; */
-    width: 15.625vw;
+    width: 15%;
 }
 
 .arrow {
@@ -508,17 +501,12 @@ footer {
     padding: 2.5px;
     transform: rotate(-45deg);
     align-self: center;
+    transition: 0.3s ease;
 }
 
 .arrow_box {
     position: relative;
     width: 9.5px;
-}
-
-.arrow_box>a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
 }
 
 .txt>ul {
@@ -528,38 +516,49 @@ footer {
 }
 
 .txt>ul li {
+    position: relative;
     border-bottom: 2px solid black;
     margin-left: 20px;
     padding-bottom: 4px;
     display: flex;
     justify-content: space-between;
+    transition: 0.3s ease;
+    
 }
-
-.txt>ul li a {
-    /* font-size: 45px; */
-    font-size: clamp(1.25rem, 0.7rem + 1.761vi, 2.813rem);
-    font-family: "TradeGothicLTStd-BdCn20";
-    color: black;
+.txt>ul li img{
+    display: none;
+}
+.txt>ul li h3{
     width: 100%;
+    font-size: clamp(1.25rem, 0.7rem + 1.761vi, 2.813rem);
+    transition: 0.3s ease;
+}
+.txt>ul li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 .index_events>.wrapper {
+    max-width: 1200px;
     /* width: 1200px; */
-    width: 62.5vw;
+    /* width: 62.5vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
     gap: 50px;
 }
-
-.card>.img {
-    /* width: 525px; h405*/
-    width: 27.3438vw;
-    height: 39.7059vh;
-
+.wrapper .cards{
+    width: 100%;
 }
-
+.wrapper .cards .card{
+    width: 30%;
+}
+.wrapper .cards .card img{
+    width: 100%;
+}
 .card>.img img {
     width: 100%;
     height: 100%;
@@ -568,8 +567,8 @@ footer {
 
 .cards {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .card {
@@ -581,7 +580,7 @@ footer {
 .card h4 {
     font-family: "Roboto", sans-serif;
     /* font-size: 32px; */
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* ----------------------- about us */
@@ -1566,7 +1565,7 @@ input:focus {
 }
 
 .courses>.txt {
-    width: 45vw;
+    width: 50%;
     /* display: flex; */
     text-align: center;
     margin: auto;
@@ -1575,10 +1574,11 @@ input:focus {
 
 .courses .course_cards {
     margin-top: 30px;
-    width: calc(100% - 30px - 30px);
-    margin-inline: 30px;
+    width: 90%;
+    /* margin-inline: 30px; */
     /* height: 400px; */
     /* background-color: red; */
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

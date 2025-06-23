@@ -1,0 +1,75 @@
+@media screen and (max-width: 1227px) {
+    .slogan {
+        width: 45%;
+        font-size: 4.5rem;
+    }
+    .background_left .hero_context p {
+        width: 40%;
+        font-size: 1rem;
+    }
+    .background_left img {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .slogan {
+        width: 55%;
+        font-size: 3.8rem;
+    }
+    .background_left .hero_context p {
+        width: 45%;
+        font-size: 1rem;
+    }
+    .background_left img {
+        width: 60%;
+    }
+    .background_left{
+        height: 553.7px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .background_left{
+        height: 453.7px;
+    }
+    .slogan {
+        width: 65%;
+        font-size: 3.0rem;
+    }
+    .background_left .hero_context p {
+        width: 55%;
+        font-size: 1rem;
+    }
+    .background_left img {
+        width: 53%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .slogan {
+        width: 70%;
+        font-size: 2.5rem;
+    }
+    .background_left .hero_context p {
+        width: 60%;
+        font-size: .8rem;
+    }
+    .background_left img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .background_left .hero_context{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .slogan {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .background_left .hero_context p {
+        width: 70%;
+        font-size: 0.8rem;
+        margin-inline: auto;
+    }
+}
