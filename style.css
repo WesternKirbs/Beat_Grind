@@ -364,21 +364,10 @@ footer {
     width: 35%;
     margin-top: 15px;
     font-size: 1rem;
-    /* margin-bottom: 30px; */
-    /* width: 33.9583333333vw; */
-    /*652px*/
 }
 
 .background_left .hero_context .btn {
     margin-top: 60px;
-}
-
-.background_left .btn {
-
-    /* padding: 1.5549076774vh 4.0625vw;   17px 78px */
-    /* border-radius: 10%; */
-    /* background: transparent; */
-
 }
 
 .btn>a {
@@ -678,7 +667,8 @@ footer {
     width: 90%;
     height: 90%;
     position: absolute;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background: lightgray;
     border-radius: 10%;
     bottom: 0;
     right: 5%;
@@ -694,7 +684,11 @@ footer {
 }
 
 .coach_cards .coach .coach_bg {
-    transition: .3s ease-in-out;
+    transition: 0.3s ease;
+}
+.coach_cards .coach:hover .coach_bg{
+    /* opacity: 1; */
+    background-color: white;
 }
 
 .coach_cards .coach img {
@@ -731,6 +725,7 @@ footer {
     background: linear-gradient(345deg, #1900F8 2.52%, #5A66FB 47.33%, #9BCDFF 98.6%);
     transition: all 0.3s ease;
 }
+
 .coach_cards .coach:hover .coach_bg::before {
     opacity: 1;
     transform: scale(1.05);
