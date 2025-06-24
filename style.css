@@ -161,6 +161,9 @@ body {
     top: 100%;
     background-color: rgba(14, 28, 28, 0.75);
 }
+.menu ul li .submenu li a{
+    padding-block: 16px;
+}
 .header .menu ul li:nth-of-type(2) a:hover ~ .submenu{
     display: inline-block;
 }
