@@ -1,8 +1,9 @@
 @media screen and (max-width: 1400px) {
-    .events{
+    .events {
         display: none;
     }
-    .dummy{
+
+    .dummy {
         display: block;
         width: 100%;
         height: 100vh;
@@ -11,6 +12,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     /*---------- header burger */
     .header .menu {
         position: absolute;
@@ -20,69 +22,80 @@
         background-color: #2E2E2E;
         top: 100%;
     }
-    .header .menu ul{
+
+    .header .menu ul {
         flex-direction: column;
         align-items: start;
     }
+
     .header .menu ul li {
         width: 100%;
     }
+
     .header>.menu>ul {
         margin-right: 0px;
     }
+
     .header .menu ul li a {
         padding-block: 20px;
-        /*padding-left: 24px; */
-        /* padding-right: calc(100vw - 24px - 100%); */
         width: 100%;
         overflow: hidden;
     }
+
     .header .menu ul li:nth-of-type(2) a {
         width: calc(100% - 40px);
     }
-    .header .menu .submenu{
-        /* padding-left: 5%; */
+
+    .header .menu .submenu {
         background-color: #393939;
         display: inline-block;
         position: relative;
         width: calc(100% + 40px);
         overflow: hidden;
     }
-    .header .menu .submenu li a{
+
+    .header .menu .submenu li a {
         padding-left: 40px;
         padding-block: 15px;
     }
-    .header .menu ul li:nth-of-type(2){
+
+    .header .menu ul li:nth-of-type(2) {
         display: flex;
         position: relative;
         flex-wrap: wrap;
     }
-    .header .menu ul li:nth-of-type(2) svg{
+
+    .header .menu ul li:nth-of-type(2) svg {
         display: inline-block;
         margin: auto;
     }
-    .header .menu ul li:nth-of-type(2) div{
+
+    .header .menu ul li:nth-of-type(2) div {
         cursor: pointer;
         width: 40px;
         display: flex;
         justify-content: center;
     }
-    .burger{
+
+    .burger {
         position: relative;
         display: block;
         width: 10%;
         display: flex;
         justify-content: center;
     }
-    .burger svg{
+
+    .burger svg {
         width: 35%;
     }
-    .burger a{
+
+    .burger a {
         position: absolute;
         width: 100%;
         height: 100%;
         bottom: 0;
     }
+
     /* ----------------about */
     .about_description .wrapper .txt {
         width: 80%;
@@ -120,14 +133,14 @@
 
     /* ---------- pricing */
     .pcourse_cards {
-        width:90%;
+        width: 90%;
     }
+
     .pcourse_card.slick-slide {
         width: 50vw;
     }
 
     .pcourse_cards div a {
-        /* font-size: 2rem; */
         font-size: clamp(0.813rem, -0.413rem + 5.026vw, 2rem);
         padding-top: 85%;
         display: none;
@@ -137,10 +150,12 @@
     .price_team .pteam_cards {
         width: 90%;
     }
+
     .price_team {
         flex-direction: column;
     }
-    .price_team .txt{
+
+    .price_team .txt {
         align-self: center;
         width: 90%;
         text-align: center;
@@ -148,24 +163,24 @@
     }
 
     .coaches.slick-slide {
-        /* width: 50vw; */
         height: 400px;
     }
-    .coaches.slick-slide img{
+
+    .coaches.slick-slide img {
         width: fit-content;
     }
-    
+
     /* ----------footer */
     .footer_info {
         display: flex;
-        /* gap: 125px; */
-        /* gap: 6.5104166667vw; */
         gap: 35px;
     }
-    .footer_info_block .icons div svg{
+
+    .footer_info_block .icons div svg {
         width: 20px;
     }
-    .footer_info_block .icons div:last-of-type svg{
+
+    .footer_info_block .icons div:last-of-type svg {
         width: 15px;
     }
 
@@ -175,83 +190,105 @@
         flex-direction: column;
         align-items: center;
     }
+
     .banner_card .tick {
         margin-bottom: 0;
     }
+
     .banner_cards .banner_card {
         flex-direction: row;
     }
-    .banner_card .card_title{
+
+    .banner_card .card_title {
         display: flex;
         align-items: center;
         gap: 5px;
-    } 
+    }
+
     .banner_card .card_title p:last-child {
         font-size: 1.25rem;
     }
-    .banner_card .bc_overlay{
+
+    .banner_card .bc_overlay {
         display: none;
     }
+
     .banner_cards .banner_card {
         padding-block: 2%;
     }
-    .whatis h3{
+
+    .whatis h3 {
         font-size: 3.5625rem;
     }
+
     .benefit_card .bcard_title h3 {
         font-size: 1.5625rem;
     }
+
     .benefit_card .bcard_title h4 {
         font-size: 0.875rem;
     }
+
     .benefit_card .bcard_txt div p {
         font-size: 0.775rem;
     }
+
     .benefit_card .bcard_txt div {
         width: 100%;
         margin-block: 15px;
         margin-top: 20px;
     }
+
     .benefit_card .bcard_txt div:nth-of-type(2) {
         border-left: 0px;
         width: 100%;
     }
+
     /* ----------index */
-    .index_about .wrapper .txt img{
+    .index_about .wrapper .txt img {
         display: block;
         width: 60%;
     }
-    .index_about .wrapper > img{
+
+    .index_about .wrapper>img {
         display: none;
     }
+
     .index_about>.wrapper>.txt {
         width: 70%;
     }
+
     .wrapper .cards {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
-    .wrapper .cards .card{
+
+    .wrapper .cards .card {
         width: 90%;
         gap: 20px;
     }
-    .wrapper .cards .card:nth-of-type(even){
+
+    .wrapper .cards .card:nth-of-type(even) {
         direction: rtl;
     }
-    .cards .card:nth-of-type(even) .card_p{
+
+    .cards .card:nth-of-type(even) .card_p {
         direction: ltr;
     }
-    .wrapper .cards .card img{
+
+    .wrapper .cards .card img {
         width: 40%;
     }
+
     .cards .card {
         display: flex;
         flex-direction: row;
         gap: 5px;
     }
-    .wrapper .cards .card .card_p{
+
+    .wrapper .cards .card .card_p {
         align-self: center;
     }
 }
@@ -260,35 +297,43 @@
     .pcourse_cards {
         width: 90%
     }
+
     .pcourse_card.slick-slide {
         width: 50vw;
     }
-    
-    .index_courses .wrapper{
+
+    .index_courses .wrapper {
         justify-content: center;
     }
-    .index_courses .wrapper .img{
+
+    .index_courses .wrapper .img {
         display: none;
     }
+
     .index_courses>.wrapper>.txt {
         width: 80%;
     }
-    .txt>ul li img{
+
+    .txt>ul li img {
         display: block;
         width: 30%;
     }
-    .txt>ul li:nth-of-type(2) img{
+
+    .txt>ul li:nth-of-type(2) img {
         display: block;
         width: 30%;
     }
-    .txt>ul li h3{
+
+    .txt>ul li h3 {
         font-size: 2rem;
     }
+
     .arrow_box {
         position: absolute;
         bottom: 30%;
         left: 0;
     }
+
     .arrow {
         position: absolute;
         width: 12.5px;
@@ -296,40 +341,48 @@
     }
 
 }
+
 @media screen and (max-width: 426px) {
-    .footer_info_block .icons div svg{
+    .footer_info_block .icons div svg {
         width: 15px;
     }
-    .footer_info_block .icons div:last-of-type svg{
+
+    .footer_info_block .icons div:last-of-type svg {
         width: 10px;
     }
+
     .footer_info_block>.icons {
         gap: 15px;
     }
+
     .footer_info {
         gap: 10px;
     }
+
     .footer_info_block:nth-of-type(2) {
         width: 35%;
     }
-    .txt>ul li h3{
+
+    .txt>ul li h3 {
         font-size: 1.4rem;
     }
-    .wrapper .cards .card{
+
+    .wrapper .cards .card {
         flex-direction: column;
     }
-    .wrapper .cards .card:nth-of-type(even){
+
+    .wrapper .cards .card:nth-of-type(even) {
         direction: ltr;
     }
-    .wrapper .cards .card img{
+
+    .wrapper .cards .card img {
         width: 70%;
     }
-    
+
 }
 
 @media screen and (min-width: 768px) {
     .pcourse_cards {
-        /* width: 90vw; */
         max-width: 1200px;
         display: flex;
         justify-content: center;
@@ -339,10 +392,7 @@
 
 
     .pcourse_cards div {
-
         width: 22%;
-        /* width: 19.2969vw; */
-        /* height: 55.4412vh; */
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -380,7 +430,6 @@
     .pcourse_cards div a {
         position: absolute;
         width: 100%;
-        /* padding-bottom: 100%; */
         height: 100%;
         z-index: 3;
         font-family: "TradeGothicLTStd-BdCn20";

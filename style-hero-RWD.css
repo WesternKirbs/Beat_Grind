@@ -14,12 +14,10 @@
     }
 
     .course_card .course_title h3 {
-        /* font-size: 3rem; */
         font-size: 2.8rem;
     }
 
     .course_card .course_title h4 {
-        /* font-size: 2rem; */
         font-size: 1.8rem;
     }
 }
@@ -51,6 +49,7 @@
     .courses .course_cards .course_card {
         width: 100%;
     }
+
     .courses .txt {
         width: 70%;
     }
@@ -113,43 +112,41 @@
         margin: auto;
         padding-inline: 100px;
     }
+
     .course_cards .course_card:nth-of-type(3) .course_title {
         right: 0;
     }
+
     .course_cards .course_card:nth-of-type(4) .course_title {
         right: 0;
     }
+
     .course_cards .course_card img {
         opacity: .6;
     }
-    
+
     .course_card .course_title h3 {
-        /* font-size: 3rem; */
         font-size: 2.0rem;
     }
-    
+
     .course_card .course_title h4 {
-        /* width: 100%; */
-        /* font-size: 2rem; */
         font-size: 1rem;
         letter-spacing: .55rem;
     }
-    
+
     .background_left .hero_context {
         text-align: center;
         margin-left: 0px;
     }
-    
+
     .slogan {
         width: 100%;
         font-size: 2.5rem;
     }
-    
+
     .background_left .hero_context p {
         width: 70%;
         font-size: 0.8rem;
         margin-inline: auto;
     }
 }
-
-

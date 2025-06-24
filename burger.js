@@ -17,23 +17,18 @@ $(function () {
         if (!phone) {
             $(this).siblings('.submenu').css('display', 'none');
         }
-
     });
 
     subm.on('mouseover', function (e) {
         if (!phone) {
             $(this).css('display', 'inline-block');
         }
-
     });
     subm.on('mouseout', function (e) {
         if (!phone) {
             $(this).css('display', 'none');
         }
-
     });
-
-
 
     $('.burger a').on('click', function (e) {
         e.preventDefault();
