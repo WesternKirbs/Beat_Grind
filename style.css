@@ -164,12 +164,7 @@ body {
 .menu ul li .submenu li a{
     padding-block: 16px;
 }
-.header .menu ul li:nth-of-type(2) a:hover ~ .submenu{
-    display: inline-block;
-}
-.header .menu ul li:nth-of-type(2) a ~ .submenu:hover{
-    display: inline-block;
-}
+
 .header .menu ul li:nth-of-type(2) svg{
     display: none;
 }
