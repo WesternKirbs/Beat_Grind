@@ -8,6 +8,7 @@ function slick_toggle() {
                     centerMode: true,
                     slidesToShow: 1,
                     variableWidth: true,
+                    focusOnSelect: true,
                 });
             slick_on = true;
         }
